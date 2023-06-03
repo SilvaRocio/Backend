@@ -1,0 +1,31 @@
+[2023-05-21 20:32:21] [ERROR] [Main:21] hubo un error porque dos empleados tienen el mismo ID, cambiar
+[2023-05-21 20:33:11] [ERROR] [Main:21] hubo un error porque dos empleados tienen el mismo ID, cambiar
+[2023-05-21 20:33:33] [ERROR] [Main:21] hubo un error porque dos empleados tienen el mismo ID, cambiar
+[2023-05-21 20:33:46] [ERROR] [Main:21] hubo un error porque dos empleados tienen el mismo ID, cambiar
+[2023-05-21 20:36:43] [ERROR] [Main:37] hubo un error porque dos empleados tienen el mismo ID, cambiar
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADO(ID) ( /* key:1 */ 1, 'Rocio', 'Silva')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADO(ID) ( /* key:1 */ 1, 'Rocio', 'Silva')"; SQL statement:
+DROP TABLE IF EXISTS Empleado [23505-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:508)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:519)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:74)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:49)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:58)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:58)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at Main.main(Main.java:26)
+[2023-05-21 20:37:10] [ERROR] [Main:37] hubo un error porque dos empleados tienen el mismo ID, cambiar
+[2023-05-21 20:41:23] [ERROR] [Main:38] hubo un error porque dos empleados tienen el mismo ID, cambiar
+[2023-05-21 20:57:41] [ERROR] [Main:38] hubo un error porque dos empleados tienen el mismo ID, cambiar
+[2023-05-21 21:00:28] [ERROR] [Main:38] hubo un error porque dos empleados tienen el mismo ID, cambiar
